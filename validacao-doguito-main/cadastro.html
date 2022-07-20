@@ -34,7 +34,7 @@
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                     <div class="input-container">
-                        <input name="senha" id="senha" class="input" type="password" placeholder="Senha" minlength="6">
+                        <input name="senha" id="senha" class="input" type="password" placeholder="Senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" title="No mínimo oito caracteres, pelo menos uma letra maiúscula, uma letra minúscula e um número" required>
                         <label class="input-label" for="senha">Senha</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
@@ -42,7 +42,7 @@
                 <fieldset>
                     <legend class="formulario__legenda">Informações pessoais</legend>
                     <div class="input-container">
-                        <input name="nascimento" id="nascimento" class="input" type="text" placeholder="Data de nascimento">
+                        <input name="nascimento" id="nascimento" class="input" type="date" placeholder="Data de nascimento">
                         <label class="input-label" for="nascimento">Data de nascimento</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
@@ -60,7 +60,7 @@
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                     <div class="input-container">
-                        <input name="logradouro" id="logradouro" class="input" type="text" placeholder="Logradouro">
+                        <input name="logradouro" id="logradouro" class="input" type="search" placeholder="Logradouro">
                         <label class="input-label" for="logradouro">Logradouro</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
@@ -79,5 +79,6 @@
             </form>
         </section>
     </main>
+    <script src="js/main.js"></script>
 </body>
 </html>
